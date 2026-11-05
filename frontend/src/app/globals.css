@@ -1,0 +1,329 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Admin Dark Mode Custom Theme */
+.admin-dark {
+  background-color: #121214 !important;
+  color: #e4e6eb !important;
+}
+
+.admin-dark aside {
+  background-color: #1a1a1c !important;
+  border-color: #2c2c2e !important;
+}
+
+.admin-dark aside * {
+  border-color: #2c2c2e !important;
+}
+
+/* Base bg-white override for cards, modals, and list containers */
+.admin-dark .bg-white {
+  background-color: #1e1e21 !important;
+}
+
+/* Ensure small white dots/switches remain white */
+.admin-dark .bg-white.w-3.h-3,
+.admin-dark .bg-white.w-4.h-4 {
+  background-color: #ffffff !important;
+}
+
+/* Gray background overrides */
+.admin-dark .bg-gray-50 {
+  background-color: #242528 !important;
+}
+
+.admin-dark .bg-gray-50\/30 {
+  background-color: #242528 !important;
+}
+
+.admin-dark .bg-gray-100 {
+  background-color: #2a2b2f !important;
+}
+
+.admin-dark .bg-gray-200 {
+  background-color: #2a2b2f !important;
+}
+
+.admin-dark .bg-gray-300 {
+  background-color: #3a3b40 !important;
+}
+
+/* Text gray classes overrides to adapt to dark backgrounds */
+.admin-dark .text-gray-800 {
+  color: #f5f6f7 !important;
+}
+
+.admin-dark .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.admin-dark .text-gray-700 {
+  color: #d1d3d8 !important;
+}
+
+.admin-dark .text-gray-600 {
+  color: #b0b3b8 !important;
+}
+
+.admin-dark .text-gray-500 {
+  color: #90949c !important;
+}
+
+.admin-dark .text-gray-400 {
+  color: #74767d !important;
+}
+
+.admin-dark .text-gray-300 {
+  color: #5a5c64 !important;
+}
+
+.admin-dark .text-black {
+  color: #ffffff !important;
+}
+
+/* Border overrides */
+.admin-dark .border-gray-100 {
+  border-color: #2a2b2f !important;
+}
+
+.admin-dark .border-gray-200 {
+  border-color: #2a2b2f !important;
+}
+
+.admin-dark .border-gray-300 {
+  border-color: #2a2b2f !important;
+}
+
+.admin-dark table {
+  border-color: #2a2b2f !important;
+}
+
+.admin-dark th {
+  background-color: #242528 !important;
+  color: #a0a5b1 !important;
+}
+
+.admin-dark td {
+  border-color: #2a2b2f !important;
+  color: #e4e6eb !important;
+}
+
+/* Interactive inputs and controls */
+.admin-dark input, 
+.admin-dark select, 
+.admin-dark textarea {
+  background-color: #242528 !important;
+  border-color: #3a3b40 !important;
+  color: #ffffff !important;
+}
+
+.admin-dark input::placeholder, 
+.admin-dark textarea::placeholder {
+  color: #74767d !important;
+}
+
+/* Hover effects */
+.admin-dark .hover\:bg-gray-50:hover {
+  background-color: #2a2b2f !important;
+}
+
+.admin-dark .hover\:bg-gray-100:hover {
+  background-color: #2a2b2f !important;
+}
+
+.admin-dark .hover\:bg-gray-200:hover {
+  background-color: #34353a !important;
+}
+
+.admin-dark .hover\:bg-gray-300:hover {
+  background-color: #34353a !important;
+}
+
+.admin-dark .hover\:bg-slate-50:hover {
+  background-color: #2a2b2f !important;
+}
+
+.admin-dark .hover\:bg-blue-50:hover {
+  background-color: #162447 !important;
+}
+
+.admin-dark .hover\:bg-green-50:hover {
+  background-color: #102d1d !important;
+}
+
+.admin-dark .hover\:bg-red-50:hover {
+  background-color: #381a1c !important;
+}
+
+/* Custom background/text utility class overrides for metric icon wrappers */
+.admin-dark .bg-\[\#fae8ff\] {
+  background-color: #381a44 !important;
+}
+.admin-dark .text-\[\#c026d3\] {
+  color: #e879f9 !important;
+}
+
+.admin-dark .bg-\[\#e0f2fe\] {
+  background-color: #162c4c !important;
+}
+.admin-dark .text-\[\#0284c7\] {
+  color: #38bdf8 !important;
+}
+
+.admin-dark .bg-\[\#dcfce7\] {
+  background-color: #123320 !important;
+}
+.admin-dark .text-\[\#16a34a\] {
+  color: #4ade80 !important;
+}
+
+/* Yellow alerts and warn state boxes */
+.admin-dark .bg-\[\#FFFCE8\] {
+  background-color: #2d2616 !important;
+  border-color: #55441b !important;
+  color: #fbbf24 !important;
+}
+
+/* Status select custom status classes */
+.admin-dark .bg-\[\#FFF2CC\] {
+  background-color: #2d2616 !important;
+  border-color: #55441b !important;
+  color: #fbbf24 !important;
+}
+.admin-dark .text-\[\#B08600\] {
+  color: #fbbf24 !important;
+}
+.admin-dark .border-\[\#FBE597\] {
+  border-color: #55441b !important;
+}
+
+.admin-dark .bg-blue-100 {
+  background-color: #162447 !important;
+}
+.admin-dark .text-blue-600 {
+  color: #60a5fa !important;
+}
+.admin-dark .text-blue-700 {
+  color: #93c5fd !important;
+}
+.admin-dark .border-blue-200 {
+  border-color: #2b3a67 !important;
+}
+
+/* Metric card specific border overrides */
+.admin-dark .border-pink-200 {
+  border-color: #4c1d30 !important;
+}
+.admin-dark .border-red-200 {
+  border-color: #4c1a1a !important;
+}
+.admin-dark .border-green-200 {
+  border-color: #1a4224 !important;
+}
+.admin-dark .border-\[\#72C8F3\] {
+  border-color: #163e52 !important;
+}
+.admin-dark .bg-blue-50\/50 {
+  background-color: rgba(90, 124, 255, 0.15) !important;
+}
+.admin-dark .hover\:bg-blue-100:hover {
+  background-color: rgba(90, 124, 255, 0.25) !important;
+}
+
+/* Chat window area backgrounds */
+.admin-dark .bg-\[\#f0f2f5\] {
+  background-color: #121214 !important;
+}
+
+/* SweetAlert2 dark theme overrides */
+.admin-dark .swal2-popup {
+  background: #1e1e21 !important;
+  color: #ffffff !important;
+}
+.admin-dark .swal2-title,
+.admin-dark .swal2-html-container,
+.admin-dark .swal2-input,
+.admin-dark .swal2-validation-message {
+  color: #ffffff !important;
+}
+.admin-dark .swal2-input {
+  background: #242528 !important;
+  border-color: #3a3b40 !important;
+}
+
+/* Summary Card Pengeluaran */
+.admin-dark .bg-\[\#FFF5F5\] {
+  background-color: #2a1818 !important;
+  border-color: #4c1a1a !important;
+}
+.admin-dark .border-\[\#FFDADA\] {
+  border-color: #4c1a1a !important;
+}
+.admin-dark .border-red-100 {
+  border-color: #4a1c1c !important;
+}
+.admin-dark .bg-white\/50 {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+.admin-dark .text-red-500 {
+  color: #fca5a5 !important;
+}
+.admin-dark .text-red-600 {
+  color: #ef4444 !important;
+}
+.admin-dark .text-red-700 {
+  color: #fca5a5 !important;
+}
+.admin-dark .text-green-700 {
+  color: #4ade80 !important;
+}
+
+/* Reset Sandi Button */
+.admin-dark .bg-\[\#FBE597\] {
+  background-color: #2b2311 !important;
+  color: #fbbf24 !important;
+  border-color: #55441b !important;
+}
+.admin-dark .hover\:bg-\[\#F9D95B\]:hover {
+  background-color: #3e3215 !important;
+}
+
+/* Scrollbar styling for dark mode */
+.admin-dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.admin-dark ::-webkit-scrollbar-track {
+  background: #1e1e21;
+}
+.admin-dark ::-webkit-scrollbar-thumb {
+  background: #3a3b40;
+  border-radius: 4px;
+}
+.admin-dark ::-webkit-scrollbar-thumb:hover {
+  background: #4a4b50;
+}
